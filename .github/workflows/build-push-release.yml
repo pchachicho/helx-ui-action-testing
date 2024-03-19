@@ -10,7 +10,8 @@ on:
   #       description: 'Tag for new release, ie 1.1.2 .. 4.0.0, etc. 🛑 DO not include the ⍘v⍘ '
   #       required: true
   #       type: string
-
+  repository_dispatch:
+    types: [my-event]
   push:
     branches:
       - master 
@@ -35,6 +36,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }} 
         fetch-depth: 0
+        run: echo "hello world"
 
     - name: Set short git commit SHA
       id: vars

@@ -17,6 +17,7 @@ on:
     - .githooks
 
 jobs:
+  
  trivy-pr-scan:
     runs-on: ubuntu-latest
     steps:
