@@ -85,4 +85,3 @@ jobs:
           containers.renci.org/${{ github.repository }}:${{ steps.vars.outputs.short_sha }}
         cache-from: type=registry,ref=${{ github.repository }}:buildcache
         cache-to: type=registry,ref=${{ github.repository }}:buildcache,mode=max
-
