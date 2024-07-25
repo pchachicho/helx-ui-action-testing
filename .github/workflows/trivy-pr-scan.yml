@@ -17,6 +17,7 @@ on:
     - .dockerignore
     - .githooks
 
+    
 jobs:
   trivy-pr-scan:
     uses: pchachicho/renci-github-actions/.github/workflows/trivy-pr-scan.yml@main
